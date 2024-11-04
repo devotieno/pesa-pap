@@ -1,0 +1,253 @@
+body{
+    background-color: #0A0C1E;
+    margin: 0px;
+    display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes full height */
+    
+}
+.topnav {
+    overflow: hidden;
+    background-color:#191A2A;
+    padding-right: 40px; 
+  }
+
+  .topnav a.active {
+    float: left;
+    background-color: #0A0C1E;
+    color:orangered;
+    font-size:25px ;
+  }
+
+  .topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+  }
+  
+  .topnav a:hover {
+    
+    box-shadow: 0 8px 16px 0 rgba(75, 71, 71, 0.678);
+
+    color:orangered;
+  }
+  
+  
+  
+  .topnav a.myMenu {
+    float: right;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 145px;
+    background-color:#0A0C1E;;
+    
+    
+    
+  }
+.content{
+    flex: 1;
+    font-size: 30px;
+    margin-right: 90px;
+    padding-left: 90px ;
+    
+    color: #f2f2f2;
+}
+.container p{
+    font-size: 20px;
+    color:#81839e ;
+}
+
+.mybutton{
+    color: black;
+    background-color:orangered ;
+    border-radius: 25px;
+    border-color:#191A2A;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+ .mybutton:visited {
+    color: blue;
+    background-color: transparent;
+  }
+
+  .mybutton:hover {
+    color: orangered;
+    background-color: transparent;
+  }
+
+  .mybutton:active {
+    color: white;
+    background-color: transparent;
+  }
+
+
+  .image{
+    flex: 1;
+    
+    margin-right: 50px;
+    margin-top: 50px;
+    max-width: 100%; /* Set maximum width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    
+  }
+  /* Media query for screens smaller than a certain width */
+@media screen and (max-width: 1070px) {
+    .container {
+      flex-direction: column; /* Change flex direction to stack the items vertically */
+      align-items: center;
+    }
+  
+    .content, .image {
+      margin: 0; /* Remove the margin to stack the items without spacing */
+    }
+
+    .content{
+        text-align: center;
+        margin: 0%;
+        padding: 0;
+
+    }
+    .image {
+        margin-top: 60px;
+    /* Add spacing between content and image */  
+        
+      }
+      .image img{
+        width: auto;
+        height: auto ;
+      }
+  }
+
+  .image img{
+    border-radius: 5%;
+    border-color:#191A2A ;
+  }
+
+  
+
+  .hr hr {
+    width: 86%; /* Adjust the width of the horizontal line */
+    margin: 20px auto; /* Add some margin for spacing */
+  }
+
+  .services{
+    padding-top: 40px;
+    text-align: center;
+  }
+  .services h{
+       color: #f2f2f2;
+       font-size: 30px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#0A0C1E;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;  
+  }
+
+  .card {
+    background-color:#4e4e5025;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    transition: 0.3s;
+    
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 253, 253, 0.678);
+  }
+
+
+  .card h4{
+    font-size: 20px;
+    color: orangered
+  }
+
+  .card p {
+    margin-bottom: 10px;
+    color:#a6a6aa;
+    
+  }
+  .mybuton{
+    color: black;
+    background-color:orangered ;
+    border-radius: 25px;
+    border-color:#191A2A;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    position:relative;
+  margin-bottom:40px;
+  left: 43%;
+  }
+
+ .mybuton:visited {
+    color: blue;
+    background-color: transparent;
+  }
+
+  .mybuton:hover {
+    color: orangered;
+    background-color: transparent;
+  }
+
+  .mybuton:active {
+    color: white;
+    background-color: transparent;
+  }
+  
+
+  
+  footer {
+    background-color: #191A2A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
