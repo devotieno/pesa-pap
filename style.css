@@ -217,7 +217,7 @@ body{
   .mybuton{
     color: black;
     background-color:orangered ;
-    border-radius: 25px;
+    border-radius: 5px;
     border-color:#191A2A;
     width: 150px;
     height: 40px;
